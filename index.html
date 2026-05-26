@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Creative Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-dot"></span>
+      <span class="brand-text">NEXUS</span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" class="nav-link active">Home</a></li>
+      <li><a href="#" class="nav-link">Work</a></li>
+      <li><a href="#" class="nav-link">Services</a></li>
+      <li><a href="#" class="nav-link">About</a></li>
+      <li><a href="#" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="nav-cta">Get Started</button>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">✦ Creative Portfolio Studio</p>
+      <h1 class="hero-title">Crafting Digital<br/><span class="gradient-text">Experiences</span></h1>
+      <p class="hero-sub">Explore our curated collection of stunning projects<br/>— each one a world of its own.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SLIDER SECTION ═══════════════ -->
+  <section class="slider-section">
+    <div class="section-header">
+      <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+      <p class="section-sub">Slide through our masterpieces</p>
+    </div>
+
+    <!-- Toggle Tabs -->
+    <div class="toggle-bar">
+      <button class="toggle-btn active" data-filter="all">All</button>
+      <button class="toggle-btn" data-filter="design">Design</button>
+      <button class="toggle-btn" data-filter="dev">Dev</button>
+      <button class="toggle-btn" data-filter="brand">Brand</button>
+    </div>
+
+    <!-- Slider Wrapper -->
+    <div class="slider-wrapper">
+      <button class="slider-arrow left" id="prevBtn">&#8592;</button>
+
+      <div class="slider-track-container">
+        <div class="slider-track" id="sliderTrack">
+
+          <!-- Card 1 -->
+          <div class="card" data-category="design">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1634986666676-ec8fd927c23d?w=600&q=80')"></div>
+            <div class="card-overlay"></div>
+            <div class="card-tag">UI Design</div>
+            <div class="card-body">
+              <h3 class="card-title">Aurora Dashboard</h3>
+              <p class="card-desc">A stunning analytics platform with real-time data visualization and dark mode.</p>
+              <div class="card-footer">
+                <span class="card-badge">2026</span>
+                <a href="#" class="card-btn">View →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card" data-category="dev">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80')"></div>
+            <div class="card-overlay"></div>
+            <div class="card-tag">Development</div>
+            <div class="card-body">
+              <h3 class="card-title">Quantum API</h3>
+              <p class="card-desc">High-performance REST API with 99.9% uptime powering 1M+ daily requests.</p>
+              <div class="card-footer">
+                <span class="card-badge">2026</span>
+                <a href="#" class="card-btn">View →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card" data-category="brand">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80')"></div>
+            <div class="card-overlay"></div>
+            <div class="card-tag">Branding</div>
+            <div class="card-body">
+              <h3 class="card-title">Luxe Identity</h3>
+              <p class="card-desc">Complete brand system for a luxury fashion house including logo & guidelines.</p>
+              <div class="card-footer">
+                <span class="card-badge">2026</span>
+                <a href="#" class="card-btn">View →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card" data-category="design">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&q=80')"></div>
+            <div class="card-overlay"></div>
+            <div class="card-tag">Mobile UI</div>
+            <div class="card-body">
+              <h3 class="card-title">Pulse App</h3>
+              <p class="card-desc">Health tracking mobile app with biometric integration and AI recommendations.</p>
+              <div class="card-footer">
+                <span class="card-badge">2026</span>
+                <a href="#" class="card-btn">View →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="card" data-category="dev">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&q=80')"></div>
+            <div class="card-overlay"></div>
+            <div class="card-tag">Development</div>
+            <div class="card-body">
+              <h3 class="card-title">NeuralNet CMS</h3>
+              <p class="card-desc">AI-powered content management system with auto-tagging and smart search.</p>
+              <div class="card-footer">
+                <span class="card-badge">2026</span>
+                <a href="#" class="card-btn">View →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="card" data-category="brand">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&q=80')"></div>
+            <div class="card-overlay"></div>
+            <div class="card-tag">Branding</div>
+            <div class="card-body">
+              <h3 class="card-title">Vanta Studios</h3>
+              <p class="card-desc">Bold visual identity for an indie game studio — dark, dramatic and iconic.</p>
+              <div class="card-footer">
+                <span class="card-badge">2026</span>
+                <a href="#" class="card-btn">View →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="card" data-category="design">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1616469829941-c7200edec809?w=600&q=80')"></div>
+            <div class="card-overlay"></div>
+            <div class="card-tag">3D Design</div>
+            <div class="card-body">
+              <h3 class="card-title">Orbit 3D</h3>
+              <p class="card-desc">Immersive 3D product configurator built with Three.js and WebGL.</p>
+              <div class="card-footer">
+                <span class="card-badge">2026</span>
+                <a href="#" class="card-btn">View →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="card" data-category="dev">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&q=80')"></div>
+            <div class="card-overlay"></div>
+            <div class="card-tag">Development</div>
+            <div class="card-body">
+              <h3 class="card-title">CryptoVault</h3>
+              <p class="card-desc">Secure DeFi wallet with multi-chain support and hardware key integration.</p>
+              <div class="card-footer">
+                <span class="card-badge">2026</span>
+                <a href="#" class="card-btn">View →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="card" data-category="brand">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80')"></div>
+            <div class="card-overlay"></div>
+            <div class="card-tag">Branding</div>
+            <div class="card-body">
+              <h3 class="card-title">Bloom Agency</h3>
+              <p class="card-desc">Vibrant rebrand for a digital marketing agency — fresh, bold, memorable.</p>
+              <div class="card-footer">
+                <span class="card-badge">2026</span>
+                <a href="#" class="card-btn">View →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 10 -->
+          <div class="card" data-category="design">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&q=80')"></div>
+            <div class="card-overlay"></div>
+            <div class="card-tag">Data Viz</div>
+            <div class="card-body">
+              <h3 class="card-title">DataPulse</h3>
+              <p class="card-desc">Real-time financial data visualization with live charting and alerts.</p>
+              <div class="card-footer">
+                <span class="card-badge">2026</span>
+                <a href="#" class="card-btn">View →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 11 -->
+          <div class="card" data-category="dev">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=600&q=80')"></div>
+            <div class="card-overlay"></div>
+            <div class="card-tag">AR/VR</div>
+            <div class="card-body">
+              <h3 class="card-title">HoloSpace</h3>
+              <p class="card-desc">Augmented reality interior design app — place furniture before you buy.</p>
+              <div class="card-footer">
+                <span class="card-badge">2026</span>
+                <a href="#" class="card-btn">View →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 12 -->
+          <div class="card" data-category="brand">
+            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80')"></div>
+            <div class="card-overlay"></div>
+            <div class="card-tag">Branding</div>
+            <div class="card-body">
+              <h3 class="card-title">Zenith Corp</h3>
+              <p class="card-desc">Corporate identity redesign for a Fortune 500 tech company — sleek and bold.</p>
+              <div class="card-footer">
+                <span class="card-badge">2026</span>
+                <a href="#" class="card-btn">View →</a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /slider-track -->
+      </div><!-- /slider-track-container -->
+
+      <button class="slider-arrow right" id="nextBtn">&#8594;</button>
+    </div><!-- /slider-wrapper -->
+
+    <!-- Dots -->
+    <div class="slider-dots" id="sliderDots"></div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
